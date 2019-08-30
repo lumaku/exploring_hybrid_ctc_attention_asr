@@ -2,22 +2,23 @@
 
 This repository contains the source code for the paper [Exploring Hybrid CTC/Attention End-to-End Speech Recognition with Gaussian Processes](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_27).
 
-In this paper, we analyze the multi-objective training approach from ESPnet that combines CTC and location-aware attention. the analyzed model consists of two parts.
+We analyzed the multi-objective training approach from ESPnet that combines CTC and location-aware attention using a Gaussian Process hyperparameter optimizer. the analyzed model consists of two parts.
 
 1. The encoder is a pyramid BLSTM encoder that uses projection layers:
 
 ![The Encoder Architecture](/plots/enc.png)
 
 
-2. The decoding network has three parts. (1) location-aware attention that can be seen on th left part, (2) frame-based classification netowrk that was trained using the CTC loss function, and (3) the beam search that combines two network components with the RNNLM language model into one single probability indicator for generating the transcription.
+2. The decoding network has three parts. (1) location-aware attention that can be seen on the left part, (2) frame-based classification netowrk that was trained using the CTC loss function, and (3) the beam search that combines two network components with the RNNLM language model into one single probability indicator for generating the transcription.
 
-![The CTC and Attention Networks](/plots/enc.png)
+![The CTC and Attention Networks](/plots/dec.png)
 
-Using Gaussian Process optimization, certain parameter groups were identified:
+Using Gaussian Process optimization, certain parameter groups were identified. (a) shows the general overview over these groups. (b) shows a certain correlation of network depth and accuracy or reduced CER, respectively. (c) lists the performance of these parameter groups. Notice that attention-only decoding without any language model (6) has already acceptable performance, whereas combining it with a language model deteriorates results (7).
 
 ![Result Overview](/plots/seaborn.png)
 
-See the [presentation](/2019_SPECOM_Exploring.pdf) for a short explanation of results.
+See the [presentation](/2019_SPECOM_Exploring.pdf) for a short explanation of results or the paper for more details.
+
 If you use these results or a part of the source code in your work, you may cite:
 
 ```

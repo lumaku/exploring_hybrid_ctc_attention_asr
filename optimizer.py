@@ -13,6 +13,14 @@ Known Issues:
 
 
 TABLE OF CONTENTS
+    1. OPTIMIZER
+    2. ESPnet plug
+    3. LM + AM + decoder plug
+    4. unit tests
+    5. Plots + analyzer
+    6. Parsers and helper functions
+    7. ESPNET model specific
+    8. MAIN
 
 
 """
