@@ -2,7 +2,7 @@
 
 This repository contains the source code for the paper [Exploring Hybrid CTC/Attention End-to-End Speech Recognition with Gaussian Processes](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_27).
 
-We analyzed the multi-objective training approach from ESPnet that combines CTC and location-aware attention using a Gaussian Process hyperparameter optimizer. the analyzed model consists of two parts.
+We analyzed the multi-objective training approach from ESPnet that combines CTC and location-aware attention using a Gaussian Process hyperparameter optimizer. The analyzed model consists of two parts.
 
 1. The encoder is a pyramid BLSTM encoder that uses projection layers:
 
