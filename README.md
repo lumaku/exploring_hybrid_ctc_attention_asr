@@ -28,7 +28,7 @@ If you use these results or a part of the source code in your work, you may cite
 	year = 2019,
 	publisher = {Springer International Publishing},
 	pages = {258--269},
-	author = {Ludwig Kürzinger and Tobias Watzel and Lujun Li and Robert Baumgartner and Gerhard Rigoll},
+	author = {Ludwig K{\"u}rzinger and Tobias Watzel and Lujun Li and Robert Baumgartner and Gerhard Rigoll},
 	title = {Exploring Hybrid {CTC}/Attention End-to-End Speech Recognition with Gaussian Processes},
 	booktitle = {Speech and Computer}
 }
