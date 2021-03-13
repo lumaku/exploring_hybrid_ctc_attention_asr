@@ -13,7 +13,7 @@ We analyzed the multi-objective training approach from ESPnet that combines CTC 
 
 ![The CTC and Attention Networks](/plots/dec.png)
 
-Using Gaussian Process optimization, certain parameter groups were identified. (a) shows the general overview over these groups. (b) shows a certain correlation of network depth and accuracy or reduced CER, respectively. (c) lists the performance of these parameter groups. Notice that attention-only decoding without any language model (6) has already acceptable performance, whereas combining it with a language model deteriorates results (7).
+Using Gaussian Process optimization, certain parameter groups were identified. (a) shows the general overview over these groups. (b) shows a certain correlation of network depth and accuracy or reduced CER, respectively. (c) lists the performance of these parameter groups. Notice that attention-only decoding without any language model (6) has already acceptable performance and does not require the support of a languge model, whereas combining it with a language model may deteriorate results (7).
 
 ![Result Overview](/plots/seaborn.png)
 
